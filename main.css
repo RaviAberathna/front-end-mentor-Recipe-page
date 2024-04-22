@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: outfit;
+  src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: young-serif;
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+}
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+
+  --White: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+
+html {
+  font-family: outfit;
+  font-size: 1rem;
+  color: var(--WengeBrown);
+  display: inline;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Eggshell);
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--White);
+}
+
+.mainImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* header section */
+header{
+    margin-bottom: 2rem;
+}
+h1 {
+  font-size: 2.4rem;
+  font-family: young-serif;
+  color: var(--DarkCharcoal);
+  font-weight: 400;
+  margin: 1.5rem 1.5rem;
+  line-height: 3rem;
+}
+h1 span{
+    white-space: nowrap;
+}
+.description{
+    margin: 1.5rem 1.5rem;
+}
+.specs h3{
+    margin: 1rem 3rem;
+}
+.specs ul{
+    margin-left: 5rem;
+}
+.specs ul li p{
+    
+    display: inline;
+}
+/* font styling */
+
+h2 {
+  font-size: 2rem;
+  font-family: young-serif;
+  font-weight: 400;
+  color: var(--Nutmeg);
+  margin: 1.5rem 1.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--DarkRaspberry);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--WengeBrown);
+}
+
+td strong {
+  color: var(--Nutmeg);
+}
+hr{
+    width: 90%;
+    margin: auto;
+    color: var(--DarkCharcoal);
+}
+
+/* ingredients */
+
+.ingredients ul{
+    margin-left: 3.5rem;
+}
+
+/* instructions */
+
+.instructions ol{
+    margin-left: 3.5rem;
+}
+.instructions ol li{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.instructions ol li p{
+    display: inline;
+}
+
+/* nutrition */
+
+.nutrition p{
+    margin: 1rem 1.5rem;
+}
+
+.nutrition table{
+    margin: 1rem auto;
+    width: 70%;
+}
+.nutrition table tr{
+    width: 80%;
+    height: 2.5rem;
+   
+}
+.nutrition table td{
+    text-align: start;
+    width: 40%;
+}
+
+@media screen and (min-width: 900px) {
+    main{
+        max-width: 900px;
+        padding: 50px 50px;
+        border-radius: 10px;
+        margin: 100px auto;
+    }
+}
+
+.attribution{
+    margin: 0 auto;
+    text-align: center;
+}
