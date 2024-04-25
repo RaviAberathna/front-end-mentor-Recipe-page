@@ -45,6 +45,7 @@ main{
     max-width: 800px;
     margin: 0 auto;
     background-color: var(--White);
+    padding: 0.5rem;
 }
 
 .mainImage {
